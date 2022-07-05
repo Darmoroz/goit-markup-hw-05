@@ -705,15 +705,16 @@
 	 color: var(--white);
 	 background-color: var(--card-bg);
 
-	 /* opacity: 0; */
-	 transform: translateY(100%);
+	 opacity: 0;
+	 transform: scaleY(0);
+	 transform-origin: bottom center;
 
 	 transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
  .work-card:hover .work-detail {
 	opacity: 1;
-	transform: translateY(0);
+	transform: scaleY(1);
 }
 
  /* .work-item:not(:nth-child(3n)) {
